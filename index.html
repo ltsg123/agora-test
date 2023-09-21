@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="modulepreload" href="./_app/immutable/entry/start.52f5424b.js" />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/scheduler.49f88041.js"
+    />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/singletons.ecd5e7f7.js"
+    />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/parse.bee59afc.js"
+    />
+    <link rel="modulepreload" href="./_app/immutable/entry/app.54e01ea0.js" />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/preload-helper.a4192956.js"
+    />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/index.491dc603.js"
+    />
+  </head>
+  <script src="./vconsole.js"></script>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+      <script>
+        const vConsole = new VConsole();
+        {
+          __sveltekit_19228wr = {
+            base: "/agora-test/",
+            env: {},
+          };
+
+          const element = document.currentScript.parentElement;
+
+          Promise.all([
+            import("./_app/immutable/entry/start.52f5424b.js"),
+            import("./_app/immutable/entry/app.54e01ea0.js"),
+          ]).then(([kit, app]) => {
+            kit.start(app, element);
+          });
+        }
+      </script>
+    </div>
+  </body>
+</html>
