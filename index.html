@@ -35,20 +35,17 @@
         const vConsole = new VConsole();
         {
           __sveltekit_19228wr = {
-            base: "/agora-test/",
+            base: location.pathname,
             env: {},
           };
-
-          const element = document.currentScript.parentElement;
-
-          Promise.all([
-            import("./_app/immutable/entry/start.52f5424b.js"),
-            import("./_app/immutable/entry/app.54e01ea0.js"),
-          ]).then(([kit, app]) => {
-            kit.start(app, element);
-          });
         }
       </script>
     </div>
   </body>
+  <script type="module">
+    import * as kit from "./_app/immutable/entry/start.52f5424b.js";
+    import * as app from "./_app/immutable/entry/app.54e01ea0.js";
+
+    kit.start(app, document.body);
+  </script>
 </html>
