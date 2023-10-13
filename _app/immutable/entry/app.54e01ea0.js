@@ -481,6 +481,7 @@ const re = [
     "/agora": [4],
     "/sverdle": [-6],
     "/sverdle/how-to-play": [6],
+    [location.pathname]: [2],
   },
   fe = {
     handleError: ({ error: o }) => {

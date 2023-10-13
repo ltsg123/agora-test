@@ -30,19 +30,15 @@
   </head>
   <script src="./vconsole.js"></script>
   <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">
-      <script>
-        const vConsole = new VConsole();
-        {
-          __sveltekit_19228wr = {
-            base: location.pathname,
-            env: {},
-          };
-        }
-      </script>
-    </div>
+    <div style="display: contents"></div>
   </body>
   <script type="module">
+    const vConsole = new VConsole();
+
+    globalThis.__sveltekit_19228wr = {
+      base: location.pathname + "/",
+      env: {},
+    };
     import * as kit from "./_app/immutable/entry/start.52f5424b.js";
     import * as app from "./_app/immutable/entry/app.54e01ea0.js";
 
